@@ -129,7 +129,6 @@ impl<'a> Request for &'a mut (RequestDelegator + 'a) {
     }
 }
 
-type RawHeaders = HashMap<String, Vec<String>>;
 pub type InHeader<'a> = (&'a String, &'a Vec<String>);
 pub type OutHeader<'a> = (String, &'a Vec<String>);
 
